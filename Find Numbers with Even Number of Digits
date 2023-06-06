@@ -1,0 +1,30 @@
+class Solution {
+    public int findNumbers(int[] nums) {
+        int c=0;
+        for(int n:nums){
+            if(even(n)){
+                c++;
+            }
+        
+        }
+
+        return c;
+    }
+    static int digit(int n){
+        int c=0;
+        while(n>0){
+            c++;
+            n/=10;
+        }
+        return c++;
+
+    }
+    static boolean even(int n){
+        int numberOfValue=digit(n);
+        if(numberOfValue%2==0){
+            return true;
+        }
+        return false;
+    }
+
+}
