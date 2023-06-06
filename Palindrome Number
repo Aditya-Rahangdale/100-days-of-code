@@ -1,0 +1,20 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        boolean f=true;
+        int a=x;
+        int q=0;
+        if(x<0){
+            return false;
+        }
+        while(x!=0){
+            int r=x%10;
+            q=q*10+r;
+            x=x/10;
+        }
+        if(q!=a){
+            f=false;
+        }
+        return f;
+        
+    }
+}
